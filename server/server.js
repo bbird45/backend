@@ -28,3 +28,5 @@ app.use('/api/login', loginRoutes);
 app.listen(port, () => {
   console.log(`เซิร์ฟเวอร์กำลังทำงานที่ http://localhost:${port}`);
 });
+
+module.exports = app; // ส่ง��ลลัพ��์ของ express app ออกไปให้ที่อื่นใช้
