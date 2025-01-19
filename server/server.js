@@ -25,8 +25,12 @@ app.use('/api/intents',intents );
 app.use('/api/admin', adminRoutes);
 app.use('/api/login', loginRoutes);
 
-app.listen(port, () => {
-  console.log(`เซิร์ฟเวอร์กำลังทำงานที่ http://localhost:${port}`);
+app.use('/', (req, res) => {
+  res.send('Hello, World!');
 });
+
+// app.listen(port, () => {
+//   console.log(`เซิร์ฟเวอร์กำลังทำงานที่ http://localhost:${port}`);
+// });
 
 module.exports = app; // ส่ง��ลลัพ��์ของ express app ออกไปให้ที่อื่นใช้
