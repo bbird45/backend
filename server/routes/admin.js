@@ -26,7 +26,6 @@ router.get('/', async (req, res) => {
     SELECT 
       admin_id,
       username,
-      password,
       email_admin,
       Phone
     FROM admin
